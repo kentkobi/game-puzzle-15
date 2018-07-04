@@ -148,14 +148,15 @@ class Puzzle {
 	isSolved () {
 		let order = 1;
 
-		for (let row = 0; row != this.board.rows; row++) {
-			for (let col = 0; col != this.board.cols; col++) {
+		for (let row = 0; row != this.rows; row++) {
+			for (let col = 0; col != this.cols; col++) {
 				if(this.board.tiles[row][col] != order){
 					return false;
 				}
 				order++;
 			}
 		}
+		
 		return true
 	}
 }
