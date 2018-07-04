@@ -1,6 +1,12 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 }
+.puzzles{
+	width: 40%;
+	min-width: 480px;
+	margin: 0 auto;
+	position: relative;
+}
 .puzzle{
 	position: relative;
 	width: 50%;
@@ -13,7 +19,7 @@ body{
 	padding-top: 100%;
 }
 .puzzle.large span.tile{
-	font-size: 2vw;
+	font-size: 0.5vw;
 }
 .puzzle.completed::after{
 	content: "DONE!";

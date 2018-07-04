@@ -4,57 +4,27 @@
 	<meta charset="utf-8">
 	<title>Canva Puzzle Test</title>
 	<link rel="stylesheet" href="puzzle.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+	
 </head>
 <body>
-	<h3>Xsmall puzzle</h3>
-	<div id="canva" class="puzzle"></div>
-
-	<h3>Small puzzle</h3>
-	<div id="canva2" class="puzzle"></div>
-
-	<h3>Medium puzzle</h3>
-	<div id="canva3" class="puzzle"></div>
-
-	<h3>Large puzzle</h3>
-	<div id="canva4" class="puzzle"></div>
-
-	<h3>Ridiculously large puzzle ;)</h3>
-	<div id="canva5" class="puzzle large"></div>
-
+	<section class="puzzles">
+		<h3>Xsmall puzzle 2x2</h3>
+		<div id="canva" class="puzzle"></div>
+	
+		<h3>Small puzzle 3x4</h3>
+		<div id="canva2" class="puzzle"></div>
+	
+		<h3>Medium puzzle 4x4</h3>
+		<div id="canva3" class="puzzle"></div>
+	
+		<h3>Large puzzle 8x8</h3>
+		<div id="canva4" class="puzzle"></div>
+	
+		<h3>Xlarge puzzle 30x30</h3>
+		<div id="canva5" class="puzzle large"></div>
+	</section>
+	
 	<script src="puzzle.js"></script>
-	<script>
-		const puzzleXSmall = new Puzzle({
-			id: 'canva',
-			cols: 2,
-			rows: 2,
-			transitionDelay: 200
-		}).init().populate().scramble();
-
-		const puzzleSmall = new Puzzle({
-			id: 'canva2',
-			cols: 3,
-			rows: 3,
-			transitionDelay: 200
-		}).init().populate().scramble();
-
-		const puzzleMedium = new Puzzle({
-			id: 'canva3',
-			cols: 4,
-			rows: 4
-		}).init().populate().scramble();
-
-		const puzzleLarge = new Puzzle({
-			id: 'canva4',
-			cols: 8,
-			rows: 8
-		}).init().populate().scramble();
-
-		const puzzleXXLarge = new Puzzle({
-			id: 'canva5',
-			cols: 30,
-			rows: 30
-		}).init().populate().scramble();
-	</script>
+	<script src="index.js"></script>
 </body>
 </html>
