@@ -1,0 +1,65 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.puzzle{
+	position: relative;
+	width: 50%;
+	padding-top: 50%;
+	height: auto;
+	margin-bottom: 80px;
+}
+.puzzle.large{
+	width: 200%;
+	padding-top: 100%;
+}
+.puzzle.large span.tile{
+	font-size: 2vw;
+}
+.puzzle.completed::after{
+	content: "DONE!";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 4vw;
+}
+.puzzle span{
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	transition: 0.15s left, 0.15s top;
+}
+.puzzle span.tile::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: 3px;
+	background-color:#20C4CB;
+	z-index: -1;
+	border-radius: 4px;
+}
+.puzzle span.tile:hover:after{
+	background-color: green;
+}
+.puzzle span.tile{
+	cursor: pointer;
+	font-size: 4vw;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.puzzle span.empty{background: transparent;}
+
+
