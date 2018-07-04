@@ -9,11 +9,10 @@ class Puzzle {
 		};
 		this.board = {
 			tiles: [],
-			empty: []
+			empty: {}
 		};
 		this.state = 'solved';
 	}
-
 	
 	init () {
 		let step = 1;
@@ -156,7 +155,7 @@ class Puzzle {
 				order++;
 			}
 		}
-		
+
 		return true
 	}
 }
