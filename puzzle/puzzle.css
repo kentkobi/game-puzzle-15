@@ -1,11 +1,9 @@
-body{
-	font-family: 'Montserrat', sans-serif;
-}
 .puzzles{
 	width: 40%;
 	min-width: 480px;
 	margin: 0 auto;
 	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 .puzzle{
 	position: relative;
